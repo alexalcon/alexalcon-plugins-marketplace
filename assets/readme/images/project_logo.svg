@@ -1,0 +1,88 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">README Generator Skill Logo</title>
+  <desc id="desc">
+    A document with a Markdown heading, automation spark, and plugin connector,
+    representing reusable automatic README generation for software projects.
+  </desc>
+
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="448" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="0.52" stop-color="#6D5CE7"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <linearGradient id="paper" x1="168" y1="128" x2="338" y2="376" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E8EEFF"/>
+    </linearGradient>
+
+    <filter id="shadow" x="54" y="50" width="404" height="420" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111827" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Transparent canvas; rounded symbol container -->
+  <g filter="url(#shadow)">
+    <rect x="72" y="64" width="368" height="368" rx="96" fill="url(#bg)"/>
+    <rect x="84" y="76" width="344" height="344" rx="84"
+          stroke="white" stroke-opacity="0.18" stroke-width="2"/>
+  </g>
+
+  <!-- Reusable/plugin connector -->
+  <path d="M206 406V374H306V406
+           C306 420 294 432 280 432H232
+           C218 432 206 420 206 406Z"
+        fill="#171B34" fill-opacity="0.62"/>
+  <path d="M241 406C241 397.716 247.716 391 256 391
+           C264.284 391 271 397.716 271 406V432H241V406Z"
+        fill="#FFFFFF" fill-opacity="0.95"/>
+
+  <!-- Document -->
+  <path d="M164 130C164 116.745 174.745 106 188 106H295L354 165V354
+           C354 367.255 343.255 378 330 378H188
+           C174.745 378 164 367.255 164 354V130Z"
+        fill="url(#paper)"/>
+
+  <!-- Folded corner -->
+  <path d="M295 106V153C295 159.627 300.373 165 307 165H354L295 106Z"
+        fill="#CAD7FF"/>
+  <path d="M295 106L354 165" stroke="#AFC1FF" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Markdown heading -->
+  <path d="M205 200H229M217 188V212M244 188V212M232 200H256"
+        stroke="#5B5FEF" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- README content lines -->
+  <rect x="205" y="238" width="108" height="12" rx="6" fill="#5B5FEF"/>
+  <rect x="205" y="268" width="124" height="10" rx="5" fill="#A6B2DA"/>
+  <rect x="205" y="294" width="104" height="10" rx="5" fill="#A6B2DA"/>
+  <rect x="205" y="320" width="78" height="10" rx="5" fill="#A6B2DA"/>
+
+  <!-- Automatic generation spark -->
+  <path d="M368 202
+           C368 180 386 162 408 162
+           C386 162 368 144 368 122
+           C368 144 350 162 328 162
+           C350 162 368 180 368 202Z"
+        fill="#8BE9FF"/>
+  <path d="M390 244
+           C390 232 400 222 412 222
+           C400 222 390 212 390 200
+           C390 212 380 222 368 222
+           C380 222 390 232 390 244Z"
+        fill="#FFFFFF"/>
+
+  <!-- Automation orbit -->
+  <path d="M123 265C114 218 129 168 163 134"
+        stroke="#8BE9FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M122 264L112 239M122 264L143 248"
+        stroke="#8BE9FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M389 287C398 330 382 375 347 403"
+        stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M390 288L401 313M390 288L369 304"
+        stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="10"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
