@@ -1,0 +1,13 @@
+{
+  "name": "alexalcon-plugins-marketplace",
+  "owner": {
+    "name": "Alex Alcón"
+  },
+  "plugins": [
+    {
+      "name": "development-plugin",
+      "source": "../plugins/alexalcon-development-plugin",
+      "description": "General tools used for my own development workflow"
+    }
+  ]
+}
