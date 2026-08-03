@@ -1,0 +1,16 @@
+{
+    "editor.guides.indentation": true,
+    "editor.renderWhitespace": "none",
+    
+    "workbench.colorCustomizations": {
+      	"editorIndentGuide.background1": "#404040",
+      	"editorIndentGuide.background2": "#505050",
+      	"editorIndentGuide.background3": "#606060",
+      	// "editorIndentGuide.activeBackground": "#707070"
+    },
+	
+	"editor.rulers": [
+		100
+	]
+}
+  
