@@ -1,0 +1,49 @@
+# os junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor / IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code local/session state (do not commit local settings or caches)
+.claude/settings.local.json
+.claude/.cache/
+.claude/logs/
+*.claude-session
+
+# logs
+*.log
+npm-debug.log*
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# node (in case tooling/scripts are added to the marketplace)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# python (in case helper scripts are added)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# temp / build output
+dist/
+build/
+tmp/
+*.tmp
+
+# folders
+notes/
