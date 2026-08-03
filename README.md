@@ -3,7 +3,7 @@
 <!-- ────────────────────────────── -->
 <p align="center" id="banner">
   <a href="https://github.com/alexalcon/alexalcon-plugins-marketplace">
-    <img src="./assets/readme/images/project_banner.png" alt="Project logo or banner" width="1322" height="528.7">
+    <img src="./assets/readme/images/project_banner.png" alt="Project logo or banner" width="1280" height="546">
     <!-- <img src="./assets/readme/images/project_logo.svg" alt="Project logo or banner" width="171" height="171"> -->
   </a>
 </p>
