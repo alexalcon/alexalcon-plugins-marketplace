@@ -1,0 +1,10 @@
+{
+  "name": "alexalcon-development-plugin",
+  "description": "A plugin for development purposes based on a personal workflow.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alex Alcón",
+    "email": "alexalcon1596@gmail.com",
+    "github": "https://github.com/alexalcon"
+  }
+}
