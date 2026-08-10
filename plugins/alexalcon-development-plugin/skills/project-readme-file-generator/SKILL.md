@@ -165,6 +165,7 @@ For the Acknowledgements section, if the user inputs "yes" in **Question 5: Foot
 - Copy all the contents from the `./assets/.github` directory.
 - Make sure to add the paths to images and the like to the `./assets/readme/` directory, and not to any other directory. Just as it is defined in `./assets/docs/file_system_structure.md`.
 - The about section is the most important section of the README file. Take into account the rules from `./assets/images/about_section_rules.png` and `./references/about_section_rules.txt` to generate a professional about section. Do not add the titles sections from `./assets/images/about_section_rules.png`, just fill up the content in paragraphs so that in must be clearly identified all these fields, just as it is explained int the corresponding part of the `./assets/main_template.md` file.
+- In the entire writing of the `./README.md` file do not use em dashes in text descriptions. Use proper orthographic symbols and rules instead.
 
 ## Outputs Format (Result(s))
 
