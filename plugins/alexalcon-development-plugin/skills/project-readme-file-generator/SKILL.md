@@ -147,15 +147,19 @@ Fill up the detailed synopsis of the project from **Input 6: Header (Detailed sy
 Fill up the "About" section from **Input 7: Header (About - the project description; referencial framework)** input. Make your best approach to enhance the content and make it more appealing and professional. Take into account the rules from `./assets/images/about_section_rules.png` and `./references/about_section_rules.txt` to generate a professional about section. Do not add the titles sections from `./assets/images/about_section_rules.png`, just fill up the content in paragraphs so that in must be clearly identified all these fields, just as it is explained int the corresponding part of the `./assets/main_template.md` file.
 
 ### Tenth step
-For the resting parts (from the Built With section to Roadmap section), do not add any content because these sections are left for the user creativity or conventions to put on to them. This is thought as the fact that only the owner or the maintainer of the project knows better how his or her project works. Thus, just add the titles of these sections and leave them empty for the user to fill up later. Make sure to add a comment in the `./README.md` file to indicate that these sections are left for the user creativity or conventions to put on to them.
+For the resting parts (from the Built With section to Usage section), do not add any content because these sections are left for the user creativity or conventions to put on to them. This is thought as the fact that only the owner or the maintainer of the project knows better how his or her project works. Thus, just add the titles of these sections and leave them empty for the user to fill up later. Make sure to add a comment in the `./README.md` file to indicate that these sections are left for the user creativity or conventions to put on to them. 
 
-### Eleventh step
-For the Support section, if the user inputs "yes" in **Question 4: Header (Support section)**, then fill up the input links and identify where the links come from (e.g. GitHub, LinkedIn, Twitter, etc.). If the user inputs "no" in **Question 4: Header (Support section)**, then just leave the default content in the Support section as it is defined in the `./assets/main_template.md` file. Also in the yes case, leave the default content in the Support section as it is defined in the `./assets/main_template.md` file, and just add the user input links continuing the bullet list of the default content in the Support section.
+### Eleventh step 
+
+The Roadmap section must be filled up with the same content as it is defined in the `./assets/main_template.md` file, by editing the corresponding links to the right github account. If you do not have a GitHub account, then just ask for it.
 
 ### Twelfth step
-For the Contributing to the License sections, just fill up the default content in these sections as it is defined in the `./assets/main_template.md` file.
+For the Support section, if the user inputs "yes" in **Question 4: Header (Support section)**, then fill up the input links and identify where the links come from (e.g. GitHub, LinkedIn, Twitter, etc.). If the user inputs "no" in **Question 4: Header (Support section)**, then just leave the default content in the Support section as it is defined in the `./assets/main_template.md` file. Also in the yes case, leave the default content in the Support section as it is defined in the `./assets/main_template.md` file, and just add the user input links continuing the bullet list of the default content in the Support section.
 
 ### Thirteenth step
+For the Contributing to the License sections, just fill up the default content in these sections as it is defined in the `./assets/main_template.md` file.
+
+### Fourteenth step
 For the Acknowledgements section, if the user inputs "yes" in **Question 5: Footer (Acknowledgements section)**, then fill up the input acknowledgements. If the user inputs "no" in **Question 5: Footer (Acknowledgements section)**, then do not add this section.
 
 ## Rules and Constraints
