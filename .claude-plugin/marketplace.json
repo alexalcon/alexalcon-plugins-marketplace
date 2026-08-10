@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "development-plugin",
+      "name": "alexalcon-development-plugin",
       "source": "../plugins/alexalcon-development-plugin",
       "description": "General tools used for my own development workflow"
     }
