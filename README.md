@@ -51,7 +51,7 @@
 <!-- ──────────────────────────────────────── -->
 <div align="center">
   <p align="center">
-  Alex Alcon's Plugins Marketplace is a personal, versioned catalog of Claude Code plugins that package recurring engineering workflows into reusable, well-documented skills.
+  <strong>Alex Alcon's Plugins Marketplace</strong> is a personal, versioned catalog of Claude Code plugins that package recurring engineering workflows into reusable, well-documented skills.
   </p>
   <p align="center">
   It bundles configuration, MCP servers, and skills (such as an interactive README generator) behind a single Claude Code plugin marketplace manifest, so they can be installed, versioned, and shared with a single command.
@@ -110,25 +110,79 @@ This marketplace is scoped to the tooling needed for the <a href="https://github
 
 ### Built With <!-- the tech stack -->
 
-<!-- left for the user's own creativity or conventions to fill in -->
+- [Claude Code](https://docs.claude.com/en/docs/claude-code/overview): the CLI agent that plugins, skills, and MCP servers are built for.
+- [Claude Code Plugin Marketplaces](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces): JSON manifests (`.claude-plugin/marketplace.json`, `plugin.json`) that declare and distribute plugins.
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io): used to connect plugins to external tools and services via `.mcp.json` configuration.
+- [Claude Code Skills](https://docs.claude.com/en/docs/claude-code/skills): Markdown-based `SKILL.md` files with supporting templates and reference assets that define reusable, invokable workflows.
+- Markdown: the format used for skill instructions, templates, and generated project documentation.
 
 ## Getting Started
 
 ### Prerequisites
 
-<!-- left for the user's own creativity or conventions to fill in -->
+Before installing plugins from this marketplace, make sure you have the following:
+
+- [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) installed and authenticated with an active Claude subscription or API access.
+- [Git](https://git-scm.com/) installed, to clone this repository and add it as a marketplace source.
+- A [GitHub](https://github.com/) account, to access this repository and its plugins.
+- Access to a [Notion](https://www.notion.so/) workspace, if you plan to use the `alexalcon-development-plugin`'s bundled MCP server.
+- Working knowledge of Claude Code itself: slash commands, custom commands, configuring and invoking skills, MCP servers, hooks, and similar concepts, since this marketplace assumes familiarity with how Claude Code plugins are used rather than teaching it from scratch.
 
 ### Installation
 
-<!-- left for the user's own creativity or conventions to fill in -->
+There are two main ways to use the plugins from this marketplace, depending on whether you just want to try one out or install it permanently.
+
+**Option 1: Test a plugin directly, without installing it**
+
+Clone this repository once, anywhere on your machine, for example alongside your other projects:
+
+```bash
+git clone https://github.com/alexalcon/alexalcon-plugins-marketplace.git
+```
+
+Then, whenever you want to try a plugin, start a Claude Code session from the project or directory where you want to use it, and point the `--plugin-dir` flag at the plugin's folder inside your local clone of this repository. This loads the plugin for that session only, without adding a marketplace or persisting anything to your configuration:
+
+```bash
+claude --plugin-dir /path/to/alexalcon-plugins-marketplace/plugins/alexalcon-development-plugin
+```
+
+Replace `/path/to/alexalcon-plugins-marketplace` with the actual location where you cloned the repository (an absolute path, or a relative path from your current project).
+
+Once Claude Code starts, try one of the plugin's skills, namespaced under the plugin name:
+
+```
+/alexalcon-development-plugin:project-readme-file-generator
+```
+
+Before using a plugin, read its own `README.md` file (for example, [plugins/alexalcon-development-plugin/README.md](./plugins/alexalcon-development-plugin/README.md)) to learn how to use it and interact with it, since usage details are documented per plugin rather than in this marketplace-level README.
+
+See [Test your plugin](https://code.claude.com/docs/en/plugins#test-your-plugins-locally) for more details on this workflow.
+
+**Option 2: Add the marketplace and install a plugin**
+
+To install a plugin permanently and receive updates whenever this marketplace changes, add the repository as a marketplace source, then install the plugin you want from it:
+
+```
+/plugin marketplace add alexalcon/alexalcon-plugins-marketplace
+/plugin install alexalcon-development-plugin@alexalcon-plugins-marketplace
+```
+
+Check the install summary: if it reports `Run /reload-plugins to activate.`, run that command to activate the plugin. Afterwards, refresh the marketplace at any time with `/plugin marketplace update` to pull in the latest plugin changes.
+
+See [Add and install](https://code.claude.com/docs/en/plugin-marketplaces#walkthrough-create-a-local-marketplace) for more details on this workflow.
+
 
 ## Usage
 
-<!-- left for the user's own creativity or conventions to fill in -->
+To use a specific plugin, check out its corresponding `README.md` file, located under its own directory in [plugins/](./plugins/) (for example, [plugins/alexalcon-development-plugin/README.md](./plugins/alexalcon-development-plugin/README.md)). Each plugin documents its own skills, commands, and usage instructions independently of this marketplace-level README.
 
 ## Roadmap
 
-<!-- left for the user's own creativity or conventions to fill in -->
+See the [open issues](https://github.com/alexalcon/alexalcon-plugins-marketplace/issues) for a list of proposed features (and known issues).
+
+- [Top Feature Requests](https://github.com/alexalcon/alexalcon-plugins-marketplace/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
+- [Top Bugs](https://github.com/alexalcon/alexalcon-plugins-marketplace/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
+- [Newest Bugs](https://github.com/alexalcon/alexalcon-plugins-marketplace/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 
 ## Support
 
