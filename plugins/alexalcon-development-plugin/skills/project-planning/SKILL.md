@@ -1,6 +1,6 @@
 ---
 name: project-planning
-description: Generate a simple and well-structured project plan for any software development project, including Notion database templates to track and document the full development workflow from planning through requirements, task breakdown, implementation, testing, and delivery. Use this skill when starting, organizing, or managing any software development project. 
+description: Generate a simple and well-structured project plan for any software development project, including Notion database templates to track and document the full development workflow from planning through requirements, task breakdown, implementation, testing, and delivery. Use this agent skill when starting, organizing, or managing any software development project. 
 ---
 
 # Software Project Planning
@@ -19,14 +19,14 @@ The entry input for this skill is the information about the software development
 
 ### Detailed inputs
 
-Ask all the questions you need to know about the software development (app) project to provide the best possible project plan. The answers of this questioning process will be the inputs used to create a detailed and accurate project plan. Thus, follow a thorough and systematic questioning approach to gather all necessary information before generating the project plan, based on the following guidelines.
+Ask all the questions you need to know about the software development (app) project to provide the best possible project plan, once the entry point is provided. The answers of this questioning process will be the inputs used to create a detailed and accurate project plan. Thus, follow a thorough and systematic questioning approach to gather all necessary information before generating the project plan, based on the following guidelines.
 
 
 - Ask one question at a time. 
 - Wait for the answer to each question before asking the next one. 
 - Do not limit the number of questions.
 - Ensure that all gathered information is complete and accurate before proceeding to generate the project plan.
-- The following questions must be asked to gather all necessary information about the project:
+- The following questions must be asked, apart from any additional questions you consider necessary, to gather all necessary information about the project:
   - Ask the current knowledge and experience level of the developer.
   - Ask about the project goals and objectives.
   - Ask about the target audience or users.
@@ -42,9 +42,10 @@ Only provide the project plan once you have asked all the questions you consider
 
 Once gathered all the necessary information about the project, proceed to generate a comprehensive project plan file that includes all stages from planning to delivery, ensuring that each aspect is well-documented and tracked using Notion database templates. 
 
-### Step 1: Generate Project Plan
+### Step 1: Generate Project Plan File
 
-- The project plan should include sections for project goals, scope, deliverables, timeline, resources, budget, risks, and any specific technologies or tools to be used. 
+- The project plan file should include sections for project goals, scope, deliverables, timeline, resources, budget, risks, and any specific technologies or tools to be used.
+- In the project plan file include the file system structure of the project, detailing the organization of directories and files.
 - Organize the project plan in structured phases to be easily followed and tracked throughout the project lifecycle, e.g., Phase0, Phase1, Phase2, etc, and then add it to the project plan file.
 - Ensure that the project plan is clear, concise, and easy to follow, providing a structured roadmap for the successful execution and completion of the project.
 - The format of the project plan file is up to you (make it professional, like a real world project plan).
@@ -63,13 +64,18 @@ Once gathered all the necessary information about the project, proceed to genera
 
 ### Step 4: Project Plan Summary Report in Notion Page Item
 
-- Create a summary report of the project plan as a Notion page item (inside the view Docs) in the `Development Notes` DB from the generated Notion databases.
+- Create an engineering project summary report of the project plan as a Notion page item (inside the view Docs) in the `Development Notes` DB from the generated Notion databases.
+
+### Step 5: System Architecture Image Prompt
+
+- Once the project plan is generated, create a prompt (a txt file) for generating the diagram (image) of the system architecture, which then will be used later to create the actual system architecture diagram in an AI image generation tool.
 
 ## Rules and Constraints
 
 - The project plan must be created as a LaTeX file and include both the code and the compiled PDF.
 - The project plan file must be located in the `assets/project` directory in the project's root, creating the directory if it does not exist.
 - For the project phases generation look at the example link in `./references/notion_project_phases_example.txt`. I want the same format, organization, structure and workflow from this example, always sarting with a "Phase 0 — Foundations".
+- For Step 5 (System Architecture Image Prompt), analyze the project plan itself and extract only the main idea of the system's core architecture. Create a standalone prompt for an image generator that clearly explains this project's core architecture.
 
 
 ## Outputs Format (Result(s))
